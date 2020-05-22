@@ -1,0 +1,32 @@
+hlwin.el provides a global minor mode to highlight the active window.
+
+DEPRECATION NOTICE
+
+This package was never released or promoted actively.  Just before I wrapped up
+work on it, auto-dim-other-buffers released a change that appears to provide a
+better solution, at least for users of Emacs 27. Specifically, rather than
+using overlays as this package does, it uses face remapping in conjunction with
+Emacs 27's :filtered face attribute.  This should avoid some of the visual
+glitches and clashes with other packages that were hard to avoid while using
+overlays.
+
+This code will not be maintained, but may be useful for anyone who wants to
+highlight the active window in Emacs 26 or below.
+
+ALTERNATIVES
+
+As mentioned, users of Emacs 27 should probably use auto-dim-other-buffers
+instead of this package. It is available on MELPA and GitHub.
+
+https://github.com/mina86/auto-dim-other-buffers.el
+
+Additionally, I rediscovered another similarly-named package, hiwin, that does
+something similar to hlwin, also using overlays. (Apparently the name stuck in
+my head.) Based on the issues and PRs, hiwin looks to be unmaintained.
+
+https://github.com/yoshida-mediba/hiwin-mode
+
+COPYRIGHT
+
+Copyright (C) 2020 Jacob First
+See LICENSE for full license information.
